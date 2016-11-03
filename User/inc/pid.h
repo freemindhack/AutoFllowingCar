@@ -10,15 +10,19 @@ typedef struct
 	float ki; //积分系数
 	float kd; //微分系数
 
-	float errNow; //当前误差
-	float dCtrOut; //控制增量输出
-	float ctrOut; //控制量输出
+    float set_speed; //设置值
+	float real_speed;
 
-	float errOld1;	//Error[-1]
-	float errOld2;	//Error[-2]
+	float err; //当前误差
+	float err_next;	//Error[-1]
+	float err_last;	//Error[-2]
 
 }PID;
 
+
+void PID_ParameterInit(PID* pid,float set_speed);
+
+float PID_SpeedAjust(PID* pid,u32 real_speed);
 
 
 

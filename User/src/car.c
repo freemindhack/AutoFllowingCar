@@ -1,9 +1,13 @@
 #include "car.h"
+#include "usart.h"
 
-uint8_t tick_1ms;
-uint16_t speed_1ms;
+uint8_t tick_1ms;  //pwm模拟控制量
+
+uint16_t pid_1ms; //pid 积分时间控制量
+
 
 Car car;
+
 
 static void Car_GPIO_Init(void)
 {
@@ -52,45 +56,85 @@ static void Init_TIMER(u16 Period)  //这里定时时间是period*1ms
 }
 
 
-void Hall_IO_Check(Car_Speed* ws)
+void Wheel_Hall_IO_Check(Wheel* w)
 {
-    ws->cur_left_io_state = GPIO_ReadInputDataBit(WHEEL_PORT,HALL_LEFT);
+    w->cur_io_state = GPIO_ReadInputDataBit(WHEEL_PORT,HALL_LEFT);
 
-	if(ws->last_left_io_state != ws->cur_left_io_state)
+	if(w->pre_io_state != w->cur_io_state)
 	{
-		ws->left_count ++;
+		w->count ++;
+		w->pre_io_state = w->cur_io_state;
 	}
 
-	ws->cur_right_io_state = GPIO_ReadInputDataBit(WHEEL_PORT,HALL_RIGHT);
-
-	if(ws->last_right_io_state != ws->cur_right_io_state)
-	{
-		ws->right_count ++;
-	}
 }
 
-void Hall_CaculateSpeed(void)
+uint16_t Wheel_Hall_CaculateSpeed(Wheel* w,uint8_t k)  
 {
-    
+    uint32_t distance = 0;
+
+    w->real_speed =  w->count * k;
+
+	w->count = 0;
+
+	return w->real_speed;
+}
+
+void Wheel_SetDuty(Wheel* w,uint8_t v)
+{
+  	w->speed = v;
 }
 
 void TIM3_IRQHandler(void)   
 {
+    float next_left_speed = 0,next_right_speed = 0;
+	uint16_t left_count = 0,right_count = 0;
+
+
 	if (TIM_GetITStatus(TIM3, TIM_IT_Update) != RESET) //检查指定的TIM中断发生与否 
 	{
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update );  //清除TIMx的中断标志位
 
 		tick_1ms++;
 
-        		
-		Hall_IO_Check(&car_speed);
+		pid_1ms++;
+    		
+		Wheel_Hall_IO_Check(&wheel_front_left);
+		Wheel_Hall_IO_Check(&wheel_front_right);
 
 		if(tick_1ms > 100)
 		{
 		    tick_1ms = 0;
-
-		
 		}
+
+		if(pid_1ms>2000) //200ms
+		{
+		    pid_1ms = 0;
+
+			left_count = Wheel_Hall_CaculateSpeed(&wheel_front_left,5);
+
+			if(left_count > 20)			//这里的20 需要根据实际情况进行修改，可能== 码盘孔数
+			{
+				wheel_front_left.real_speed = (left_count-20)/3;
+
+				//next_left_speed = PID_SpeedAjust(&wheel_front_left.pid,wheel_front_left.real_speed);
+
+			    //Wheel_SetDuty(&wheel_front_left,next_left_speed);
+			}
+
+			right_count = Wheel_Hall_CaculateSpeed(&wheel_front_right,5);
+			if(right_count > 20 )
+			{
+				wheel_front_right.real_speed = (right_count-20)/3;
+
+				//next_right_speed = PID_SpeedAjust(&wheel_front_right.pid,wheel_front_right.real_speed);
+
+				//Wheel_SetDuty(&wheel_front_right,next_right_speed);
+			}
+
+		   	printf("before pid     left_pid_speed : %d   right_pid_speed : %d \r\n",wheel_front_left.real_speed,wheel_front_right.real_speed);
+
+			//printf("after pid     left_pid_speed : %0.2f   right_pid_speed : %0.2f \r\n",next_left_speed,next_right_speed);
+		}			   
 
 		Car_Move();
 
@@ -100,7 +144,12 @@ void TIM3_IRQHandler(void)
 
 void Wheel_PWMEmulate(Wheel* w,uint8_t duty)
 {
-    if(w->direction == STOP) return;
+    if(w->direction == STOP)
+	{ 
+	    GPIO_ResetBits(w->port,w->pin[0]);
+		GPIO_ResetBits(w->port,w->pin[1]);
+	    return;
+	}
 
     if( duty > w->speed)
 	{
@@ -179,9 +228,11 @@ void Car_Back(void) //向后
 
 void Car_Left(void)//向左
 {
+    Wheel_SpeedDec(&wheel_front_left,10);
 	Wheel_SetDirection(&wheel_front_left,BACKWARD);
 	Wheel_SetDirection(&wheel_rear_left,BACKWARD);
 
+	Wheel_SpeedInc(&wheel_front_right,40);
 	Wheel_SetDirection(&wheel_front_right,FORWARD);
 
 	Wheel_SpeedInc(&wheel_rear_right,30);
@@ -191,9 +242,7 @@ void Car_Left(void)//向左
 
 void Car_Right(void) //向右
 {
-	Wheel_SpeedDec(&wheel_front_right,0);
 	Wheel_SetDirection(&wheel_front_right,BACKWARD);
-	Wheel_SpeedDec(&wheel_rear_right,0);
 	Wheel_SetDirection(&wheel_rear_right,BACKWARD);
 
 	Wheel_SetDirection(&wheel_front_left,FORWARD);
@@ -205,6 +254,7 @@ void Car_Right(void) //向右
 void Car_Stop(void)  //停止
 {
     wheel_front_left.speed = 0;
+
 	wheel_front_left.direction = STOP;
 
     wheel_front_right.speed = 0;
@@ -222,6 +272,7 @@ void Car_Move(void)
 { 
      Wheel_PWMEmulate(&wheel_front_left,tick_1ms);
 	 Wheel_PWMEmulate(&wheel_front_right,tick_1ms);
+
 	 Wheel_PWMEmulate(&wheel_rear_left,tick_1ms);
 	 Wheel_PWMEmulate(&wheel_rear_right,tick_1ms);
 }
@@ -233,29 +284,46 @@ void Wheel_ParameterInit(Wheel* w,GPIO_TypeDef* port,uint16_t pin1,uint16_t pin2
 	 w->pin[1] = pin2;
 	 w->direction = direction;
 	 w->speed = speed;
+
+	 w->real_speed = speed;
+	 w->pre_io_state = w->cur_io_state = 0;
+	 w->count = 0;
+
+	 w->encoder_holes = WHEEL_ENCODER_HOLES; 
+	 w->radio = WHEEL_RADIO;
+	 w->distance = 0;
+	 w->phy_speed = 0;
+	 
+	 w->pid_time = PID_TIME;
 }
 
-void Parameter_Init(void)
+void Parameter_Init(uint8_t front_left_speed,uint8_t front_right_speed,uint8_t rear_left_speed,uint8_t rear_right_speed)
 {
-   	Wheel_ParameterInit(&wheel_front_left,GPIOA,WHEEL_FRONT_LEFT_1,WHEEL_FRONT_LEFT_2,FORWARD,20);
-	Wheel_ParameterInit(&wheel_front_right,GPIOA,WHEEL_FRONT_RIGHT_1,WHEEL_FRONT_RIGHT_2,FORWARD,20);
-	Wheel_ParameterInit(&wheel_rear_left,GPIOA,WHEEL_REAR_LEFT_1,WHEEL_REAR_LEFT_2,FORWARD,20);
-	Wheel_ParameterInit(&wheel_rear_right,GPIOA,WHEEL_REAR_RIGHT_1,WHEEL_REAR_RIGHT_2,FORWARD,20);
+   	Wheel_ParameterInit(&wheel_front_left,GPIOA,WHEEL_FRONT_LEFT_1,WHEEL_FRONT_LEFT_2,FORWARD,front_left_speed);
+	Wheel_ParameterInit(&wheel_front_right,GPIOA,WHEEL_FRONT_RIGHT_1,WHEEL_FRONT_RIGHT_2,FORWARD,front_right_speed);
 
-    car_speed.last_left_io_state = 0;
-	car_speed.last_right_io_state = 0;
 
-	car_speed.left_speed = 0;
-	car_speed.right_speed = 0;
+	Wheel_ParameterInit(&wheel_rear_left,GPIOA,WHEEL_REAR_LEFT_1,WHEEL_REAR_LEFT_2,FORWARD,rear_left_speed);
+	Wheel_ParameterInit(&wheel_rear_right,GPIOA,WHEEL_REAR_RIGHT_1,WHEEL_REAR_RIGHT_2,FORWARD,rear_right_speed);
 
+	//pid 调控左前  右前 轮子速度
+	PID_ParameterInit(&wheel_front_left.pid,wheel_front_left.speed);
+	PID_ParameterInit(&wheel_front_right.pid,wheel_front_right.speed);
+
+}
+
+float Car_GetRunDistance(void)
+{
+   
+	return 	wheel_front_left.distance;
 }
 
 void Car_Init(void)
 {
     Car_GPIO_Init();
-	Parameter_Init();
+	Parameter_Init(40,40,0,0);
 
 	Car_Go();
-	Init_TIMER(1);
+	Init_TIMER(1);	 //0.1 ms
 
 }

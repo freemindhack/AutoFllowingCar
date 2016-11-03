@@ -411,6 +411,16 @@
               <FileType>1</FileType>
               <FilePath>..\User\src\carcontrol.c</FilePath>
             </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\src\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\src\usart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

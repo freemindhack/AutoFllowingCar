@@ -406,6 +406,11 @@
               <FileType>1</FileType>
               <FilePath>..\User\src\systick.c</FilePath>
             </File>
+            <File>
+              <FileName>carcontrol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\src\carcontrol.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

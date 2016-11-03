@@ -2,6 +2,7 @@
 #define __CAR_H_
 
 #include "stm32f10x.h"
+#include "pid.h"
 
 #define WHEEL_RCC           RCC_APB2Periph_GPIOA
 #define WHEEL_PORT          GPIOA
@@ -22,6 +23,12 @@
 #define HALL_LEFT          GPIO_Pin_11
 #define HALL_RIGHT          GPIO_Pin_12
 
+#define WHEEL_RADIO  33   //mm
+#define WHEEL_ENCODER_HOLES 20
+
+#define PI 314
+
+#define PID_TIME 200 //ms
 
 typedef enum
 {
@@ -35,26 +42,24 @@ typedef struct
     GPIO_TypeDef* port; //控制端口
     uint16_t pin[2];        //控制脚
    	Wheel_Direction direction;   //轮子转动方向
-	uint8_t speed;       //设定的转动速度
-	uint8_t real_speed;   //当前实际的转动速度
+	uint16_t speed;       //设定的转动速度	 pwm
+	uint16_t real_speed;   //当前实际的转动速度 pwm
+
+	uint8_t  encoder_holes;//码盘孔数目
+	uint8_t  radio;    //车轮半径
+	uint32_t    distance; //当前行走路程
+	uint32_t    phy_speed; //轮子当前实际速度
+	
+    uint8_t pre_io_state;
+	uint8_t cur_io_state;
+
+	uint32_t count;
+
+	PID pid;
+
+	uint16_t pid_time;
+
 }Wheel;
-
-
-typedef struct 
-{
-    uint8_t last_left_io_state;
-    uint8_t cur_left_io_state; 
-
-	uint8_t last_right_io_state;
-	uint8_t cur_right_io_state;
-
-	uint32_t left_count;
-	uint32_t right_count;
-
-	uint8_t left_speed;
-	uint8_t right_speed;
-
-}Car_Speed;
 
 
 typedef struct 
@@ -67,13 +72,19 @@ typedef struct
 	#define wheel_rear_right car.wheel[3]
 
 
-	Car_Speed speed;  //速度
-	#define car_speed car.speed
-
 }Car;
 
 
 void Car_Init(void);
 void Car_Move(void);
+
+void Car_Go(void);	
+void Car_Back(void);
+void Car_Left(void);
+void Car_Right(void);
+void Car_Stop(void);
+
+void Parameter_Init(uint8_t front_left_speed,uint8_t front_right_speed,uint8_t rear_left_speed,uint8_t rear_right_speed);
+float Car_GetRunDistance(void);
 
 #endif

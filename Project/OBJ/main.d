@@ -31,3 +31,8 @@
 .\OBJ\main.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\OBJ\main.o: ..\Libraries\StdPeriph_Driver\inc\misc.h
 .\OBJ\main.o: ..\User\inc\car.h
+.\OBJ\main.o: ..\User\inc\pid.h
+.\OBJ\main.o: ..\User\inc\usart.h
+.\OBJ\main.o: D:\Keil4\ARM\RV31\Inc\stdio.h
+.\OBJ\main.o: D:\Keil4\ARM\RV31\Inc\stdbool.h
+.\OBJ\main.o: ..\User\inc\carcontrol.h

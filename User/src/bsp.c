@@ -12,6 +12,7 @@ void BSP_Init(void)
     /* ±÷”≥ı ºªØ*/
 	RCC_Configuration();	
 	SysTick_Init();
+	USART1_Config();
 	Car_Init();	
 
 }

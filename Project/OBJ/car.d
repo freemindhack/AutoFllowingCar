@@ -29,3 +29,7 @@
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\misc.h
+.\OBJ\car.o: ..\User\inc\pid.h
+.\OBJ\car.o: ..\User\inc\usart.h
+.\OBJ\car.o: D:\Keil4\ARM\RV31\Inc\stdio.h
+.\OBJ\car.o: D:\Keil4\ARM\RV31\Inc\stdbool.h

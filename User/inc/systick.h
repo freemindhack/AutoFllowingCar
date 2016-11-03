@@ -22,6 +22,8 @@ void delay1ms(u16 nms);
 ********************************************/   		    								   
 void delay1us(u32 nus);
 
+void delay1s(u16 ns);
+
 
 #endif
 
