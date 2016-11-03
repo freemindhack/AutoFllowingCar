@@ -1,0 +1,3645 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\新项目工程\小车测试\Project\Project.uvproj
+Project File Date:  11/02/2016
+
+<h2>Output:</h2>
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+..\User\inc\BSP.H(5): error:  #5: cannot open source input file "usart.h": No such file or directory
+compiling SysTick.c...
+compiling BSP.c...
+..\User\inc\BSP.h(5): error:  #5: cannot open source input file "usart.h": No such file or directory
+compiling motorctl.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(3): error:  #20: identifier "PER_PLUS_BLOOD" is undefined
+..\User\main.c(4): error:  #20: identifier "ADCState" is undefined
+..\User\main.c(7): error:  #20: identifier "TAR_BLOOD" is undefined
+..\User\main.c(8): error:  #20: identifier "PluseType" is undefined
+..\User\main.c(17): warning:  #223-D: function "adc_varible_init" declared implicitly
+..\User\main.c(18): warning:  #223-D: function "timer_variable_init" declared implicitly
+..\User\main.c(34): warning:  #223-D: function "printf" declared implicitly
+..\User\main.c(45): warning:  #223-D: function "StartADC" declared implicitly
+..\User\main.c(76): warning:  #223-D: function "Sys_Soft_Reset" declared implicitly
+..\User\main.c(87): warning:  #223-D: function "StartTimerx" declared implicitly
+..\User\main.c(88): warning:  #223-D: function "wait_time_up" declared implicitly
+..\User\main.c(115): error:  #20: identifier "Begin" is undefined
+..\User\main.c(117): error:  #20: identifier "Finish" is undefined
+..\User\main.c(121): warning:  #223-D: function "StartTimerx" declared implicitly
+..\User\main.c(122): warning:  #223-D: function "wait_time_up" declared implicitly
+..\User\main.c(128): warning:  #223-D: function "StopADC" declared implicitly
+..\User\main.c(130): warning:  #223-D: function "getPluse" declared implicitly
+..\User\main.c(132): warning:  #223-D: function "find_high_low_pressure" declared implicitly
+..\User\main.c(134): warning:  #223-D: function "USART2_NVIC_Configuration" declared implicitly
+..\User\main.c(136): warning:  #223-D: function "check_temperature" declared implicitly
+compiling BSP.c...
+..\User\src\BSP.c(18): warning:  #223-D: function "USART1_Config" declared implicitly
+..\User\src\BSP.c(20): warning:  #223-D: function "USART2_Config" declared implicitly
+..\User\src\BSP.c(21): warning:  #223-D: function "USART1_NVIC_Configuration" declared implicitly
+..\User\src\BSP.c(22): warning:  #223-D: function "ADC1_Init" declared implicitly
+..\User\src\BSP.c(26): warning:  #223-D: function "Timer3Init" declared implicitly
+..\User\src\BSP.c(28): warning:  #223-D: function "Timer2Init" declared implicitly
+..\User\src\BSP.c(30): warning:  #223-D: function "Trigger_Init" declared implicitly
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling BSP.c...
+compiling motorctl.c...
+linking...
+Program Size: Code=2260 RO-data=336 RW-data=8 ZI-data=1024  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling SysTick.c...
+compiling BSP.c...
+compiling motorctl.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=2260 RO-data=336 RW-data=8 ZI-data=1024  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling SysTick.c...
+compiling BSP.c...
+compiling motorctl.c...
+..\User\src\motorctl.c(104): error:  #20: identifier "TIM4_CH3_Dutyfactor" is undefined
+..\User\src\motorctl.c(119): error:  #20: identifier "TIM4_CH4_Dutyfactor" is undefined
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+Target not created
+Build target 'STM3210E-XLH'
+compiling motorctl.c...
+linking...
+Program Size: Code=2596 RO-data=336 RW-data=12 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling SysTick.c...
+compiling BSP.c...
+compiling motorctl.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=2596 RO-data=336 RW-data=12 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\inc\BSP.H(5): error:  #5: cannot open source input file "motorctl.h": No such file or directory
+compiling BSP.c...
+..\User\inc\BSP.h(5): error:  #5: cannot open source input file "motorctl.h": No such file or directory
+compiling car.c...
+..\User\src\car.c(1): error:  #5: cannot open source input file "motorctl.h": No such file or directory
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling BSP.c...
+compiling car.c...
+..\User\src\car.c(1): error:  #5: cannot open source input file "motorctl.h": No such file or directory
+Target not created
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling SysTick.c...
+compiling BSP.c...
+compiling car.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=2596 RO-data=336 RW-data=12 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=2596 RO-data=336 RW-data=12 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+linking...
+Program Size: Code=2596 RO-data=336 RW-data=12 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\inc\car.h(47): error:  #20: identifier "MG" is undefined
+..\User\inc\car.h(47): error:  #20: identifier "MG_State" is undefined
+..\User\inc\car.h(48): error:  #20: identifier "MG" is undefined
+compiling car.c...
+..\User\inc\car.h(47): error:  #20: identifier "MG" is undefined
+..\User\inc\car.h(47): error:  #20: identifier "MG_State" is undefined
+..\User\inc\car.h(48): error:  #20: identifier "MG" is undefined
+compiling bsp.c...
+..\User\inc\car.h(47): error:  #20: identifier "MG" is undefined
+..\User\inc\car.h(47): error:  #20: identifier "MG_State" is undefined
+..\User\inc\car.h(48): error:  #20: identifier "MG" is undefined
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+linking...
+Program Size: Code=1580 RO-data=336 RW-data=4 ZI-data=1028  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=1588 RO-data=336 RW-data=8 ZI-data=1024  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+..\User\src\car.c(98): error:  #18: expected a ")"
+..\User\src\car.c(108): error:  #165: too few arguments in function call
+compiling bsp.c...
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(108): error:  #20: identifier "FORWARD" is undefined
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+linking...
+Program Size: Code=1588 RO-data=336 RW-data=16 ZI-data=1024  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1620 RO-data=336 RW-data=16 ZI-data=1024  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+linking...
+Program Size: Code=1684 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(70): error:  #137: expression must be a modifiable lvalue
+..\User\src\car.c(76): error:  #137: expression must be a modifiable lvalue
+..\User\src\car.c(107): error:  #20: identifier "BACKWARD" is undefined
+..\User\src\car.c(118): error:  #20: identifier "BACKWARD" is undefined
+..\User\src\car.c(121): error:  #20: identifier "FORWRAD" is undefined
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+..\User\src\car.c(70): error:  #137: expression must be a modifiable lvalue
+..\User\src\car.c(76): error:  #137: expression must be a modifiable lvalue
+..\User\src\car.c(121): error:  #20: identifier "FORWRAD" is undefined
+compiling bsp.c...
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(121): error:  #20: identifier "FORWRAD" is undefined
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1684 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1684 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(145): error:  #44: expression must have pointer type
+..\User\src\car.c(146): error:  #44: expression must have pointer type
+..\User\src\car.c(148): error:  #44: expression must have pointer type
+..\User\src\car.c(149): error:  #44: expression must have pointer type
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1684 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(72): error:  #136: struct "<unnamed>" has no field "directoin"
+..\User\src\car.c(172): error:  #165: too few arguments in function call
+..\User\src\car.c(173): error:  #165: too few arguments in function call
+..\User\src\car.c(174): error:  #165: too few arguments in function call
+..\User\src\car.c(175): error:  #165: too few arguments in function call
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(172): error:  #165: too few arguments in function call
+..\User\src\car.c(173): error:  #165: too few arguments in function call
+..\User\src\car.c(174): error:  #165: too few arguments in function call
+..\User\src\car.c(175): error:  #165: too few arguments in function call
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1684 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(65): warning:  #223-D: function "Car_Move" declared implicitly
+..\User\src\car.c(172): error:  #159: declaration is incompatible with previous "Car_Move" (declared at line 65)
+Target not created
+Build target 'STM3210E-XLH'
+compiling main.c...
+compiling car.c...
+compiling bsp.c...
+linking...
+Program Size: Code=1800 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1804 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+linking...
+Program Size: Code=1800 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 1 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1804 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(23): warning:  #177-D: function "Init_TIMER" was declared but never referenced
+linking...
+Program Size: Code=1500 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 1 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1800 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+..\User\src\car.c(183): error:  #20: identifier "w" is undefined
+compiling bsp.c...
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1800 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+compiling bsp.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=1800 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 1 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1812 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1876 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1904 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(88): error:  #154: expression must have struct or union type
+..\User\src\car.c(194): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(195): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(196): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(197): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+Target not created
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+_____^
+*** error 56: cannot open file
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(88): error:  #154: expression must have struct or union type
+..\User\src\car.c(194): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(195): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(196): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+..\User\src\car.c(197): error:  #167: argument of type "Wheel" is incompatible with parameter of type "Wheel *"
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(88): error:  #154: expression must have struct or union type
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1892 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1896 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1856 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Rebuild target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+compiling bsp.c...
+compiling systick.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+linking...
+Program Size: Code=1856 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 1 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(83): error:  #154: expression must have struct or union type
+..\User\src\car.c(83): error:  #154: expression must have struct or union type
+..\User\src\car.c(90): error:  #154: expression must have struct or union type
+..\User\src\car.c(90): error:  #154: expression must have struct or union type
+..\User\src\car.c(94): error:  #154: expression must have struct or union type
+..\User\src\car.c(94): error:  #154: expression must have struct or union type
+Target not created
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1908 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1908 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1888 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1860 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1860 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1860 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1908 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1908 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1908 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1864 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1864 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+..\User\src\car.c(23): warning:  #177-D: function "Init_TIMER" was declared but never referenced
+linking...
+Program Size: Code=1468 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 1 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1864 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1808 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1872 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1972 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1972 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1972 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1972 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1956 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\新项目工程\\小车测试\\Project\\OBJ\\obj.AXF" 
+* JLink Info: Device "STM32F103ZE" selected (512 KB flash, 64 KB RAM).
+Set JLink Project File to "E:\新项目工程\小车测试\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'STM3210E-XLH'
+compiling car.c...
+linking...
+Program Size: Code=1940 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 0 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+compiling bsp.c...
+compiling carcontrol.c...
+..\User\inc\carcontrol.h(9): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 2 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+compiling bsp.c...
+compiling carcontrol.c...
+..\User\inc\carcontrol.h(9): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1916 RO-data=336 RW-data=8 ZI-data=1072  
+FromELF: creating hex file...
+".\OBJ\obj.axf" - 0 Error(s), 2 Warning(s).
+Build target 'STM3210E-XLH'
+compiling main.c...
+..\User\main.c(9): warning:  #111-D: statement is unreachable
+compiling car.c...
+..\User\src\car.c(17): error:  #130: expected a "{"
+..\User\src\car.c(27): warning:  #940-D: missing return statement at end of non-void function "GPIO_ReadInputDataBit"
+..\User\src\car.c(236): warning:  #223-D: function "Car_GPIO_Init" declared implicitly
+compiling bsp.c...
+compiling carcontrol.c...
+..\User\inc\carcontrol.h(9): warning:  #1-D: last line of file ends without a newline
+Target not created
