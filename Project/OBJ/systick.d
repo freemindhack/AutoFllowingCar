@@ -2,7 +2,7 @@
 .\OBJ\systick.o: ..\User\inc\SysTick.h
 .\OBJ\systick.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\OBJ\systick.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\OBJ\systick.o: D:\Keil4\ARM\RV31\Inc\stdint.h
+.\OBJ\systick.o: D:\Keil\ARM\RV31\INC\stdint.h
 .\OBJ\systick.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\OBJ\systick.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_conf.h
 .\OBJ\systick.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_adc.h

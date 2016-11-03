@@ -1,7 +1,7 @@
 .\OBJ\system_stm32f10x.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.c
 .\OBJ\system_stm32f10x.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\OBJ\system_stm32f10x.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\OBJ\system_stm32f10x.o: D:\Keil4\ARM\RV31\Inc\stdint.h
+.\OBJ\system_stm32f10x.o: D:\Keil\ARM\RV31\INC\stdint.h
 .\OBJ\system_stm32f10x.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\OBJ\system_stm32f10x.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_conf.h
 .\OBJ\system_stm32f10x.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_adc.h

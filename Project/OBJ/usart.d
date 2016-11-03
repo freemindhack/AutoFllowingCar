@@ -2,7 +2,7 @@
 .\OBJ\usart.o: ..\User\inc\usart.h
 .\OBJ\usart.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\OBJ\usart.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\OBJ\usart.o: D:\Keil4\ARM\RV31\Inc\stdint.h
+.\OBJ\usart.o: D:\Keil\ARM\RV31\INC\stdint.h
 .\OBJ\usart.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\OBJ\usart.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_conf.h
 .\OBJ\usart.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -29,7 +29,7 @@
 .\OBJ\usart.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_usart.h
 .\OBJ\usart.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\OBJ\usart.o: ..\Libraries\StdPeriph_Driver\inc\misc.h
-.\OBJ\usart.o: D:\Keil4\ARM\RV31\Inc\stdio.h
-.\OBJ\usart.o: D:\Keil4\ARM\RV31\Inc\stdbool.h
-.\OBJ\usart.o: D:\Keil4\ARM\RV31\Inc\string.h
-.\OBJ\usart.o: D:\Keil4\ARM\RV31\Inc\stdarg.h
+.\OBJ\usart.o: D:\Keil\ARM\RV31\INC\stdio.h
+.\OBJ\usart.o: D:\Keil\ARM\RV31\INC\stdbool.h
+.\OBJ\usart.o: D:\Keil\ARM\RV31\INC\string.h
+.\OBJ\usart.o: D:\Keil\ARM\RV31\INC\stdarg.h
