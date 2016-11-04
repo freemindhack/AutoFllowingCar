@@ -2,7 +2,7 @@
 .\OBJ\car.o: ..\User\inc\car.h
 .\OBJ\car.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\OBJ\car.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\OBJ\car.o: D:\Keil\ARM\RV31\INC\stdint.h
+.\OBJ\car.o: D:\Keil4\ARM\RV31\Inc\stdint.h
 .\OBJ\car.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_conf.h
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -31,5 +31,7 @@
 .\OBJ\car.o: ..\Libraries\StdPeriph_Driver\inc\misc.h
 .\OBJ\car.o: ..\User\inc\pid.h
 .\OBJ\car.o: ..\User\inc\usart.h
-.\OBJ\car.o: D:\Keil\ARM\RV31\INC\stdio.h
-.\OBJ\car.o: D:\Keil\ARM\RV31\INC\stdbool.h
+.\OBJ\car.o: D:\Keil4\ARM\RV31\Inc\stdio.h
+.\OBJ\car.o: D:\Keil4\ARM\RV31\Inc\stdbool.h
+.\OBJ\car.o: ..\User\inc\time.h
+.\OBJ\car.o: ..\User\inc\systick.h

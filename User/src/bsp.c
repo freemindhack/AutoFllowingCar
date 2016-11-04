@@ -14,6 +14,7 @@ void BSP_Init(void)
 	SysTick_Init();
 	USART1_Config();
 	Car_Init();	
+	Init_TIMER();
 
 }
 

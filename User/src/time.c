@@ -25,32 +25,31 @@ uint32_t Sys_GetSeconds(void)
 
 void UserTime_Reset(SysTime* time)
 {
-   time.hour = sys_time.hour;
-   time.min = sys_time.min;
-   time.sec = sys_time.sec;
-   time.msec = sys_time.msec;
-   time.usec = sys_time.usec;
+   time->hour = sys_time.hour;
+   time->min = sys_time.min;
+   time->sec = sys_time.sec;
+   time->msec = sys_time.msec;
 }
 
-BOOL T_1ms(SysTime* now_time,uint16_t xms)
+BOOL T_1ms(SysTime now_time,uint16_t xms)
 {
     return ((now_time.hour*3600*1000+now_time.min*60*1000 + now_time.sec*1000 + now_time.msec + xms) <= (sys_time.hour*3600*1000+sys_time.min*60*1000 + sys_time.sec*1000 + sys_time.msec) ? TRUE : FALSE);
 }
 
-BOOL T_1s(SysTime* now_time,uint16_t xs)
+BOOL T_1s(SysTime now_time,uint16_t xs)
 {
    	return ((now_time.hour*3600+now_time.min*60 + now_time.sec + xs) <= (sys_time.hour*3600+sys_time.min*60 + sys_time.sec) ? TRUE : FALSE);
 }
 
 
-void Init_TIMER(void)  //这里定时时间是0.1ms	 
+void Init_TIMER(void)  //这里定时时间是1ms	 
 {
     TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 	NVIC_InitTypeDef NVIC_InitStructure;
 
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE); //时钟使能
 
-	TIM_TimeBaseStructure.TIM_Period = Period; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到N*10为Nms
+	TIM_TimeBaseStructure.TIM_Period = 10; //设置在下一个更新事件装入活动的自动重装载寄存器周期的值	 计数到N*10为Nms
 	TIM_TimeBaseStructure.TIM_Prescaler =(7200-1); //设置用来作为TIMx时钟频率除数的预分频值  10Khz的计数频率  
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0; //设置时钟分割:TDTS = Tck_tim
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;  //TIM向上计数模式
@@ -79,26 +78,22 @@ void TIM3_IRQHandler(void)
 	{
 		TIM_ClearITPendingBit(TIM3, TIM_IT_Update );  //清除TIMx的中断标志位
 
-		sys_time.usec +=  100;
-		if(sys_time.usec >= 1000)
-		{
-		    sys_time.usec = 0;
-			sys_time.msec += 1;
+			sys_time.msec++;
 
 			if(sys_time.msec >= 1000)
 			{
 			    sys_time.msec = 0;
-				sys_time.sec += 1;
+				sys_time.sec ++;
 
 				if(sys_time.sec >= 60)
 				{
 				   sys_time.sec = 0;
-				   sys_time.min += 1;
+				   sys_time.min ++;
 				   
 				   if(sys_time.min >= 60)
 				   {
 				       sys_time.min = 0;
-				       sys_time.hour += 1;
+				       sys_time.hour ++;
 					   if(sys_time.hour >= 24)
 					   {
 					      sys_time.hour = 0;
@@ -108,7 +103,6 @@ void TIM3_IRQHandler(void)
 			}
 		}
 
-	}
 
 }
 

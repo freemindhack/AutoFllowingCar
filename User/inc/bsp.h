@@ -5,6 +5,7 @@
 #include "car.h"
 #include "usart.h"
 #include "carcontrol.h"
+#include "time.h"
 
 void BSP_Init(void);
 void RCC_Configuration(void);

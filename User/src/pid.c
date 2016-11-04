@@ -1,8 +1,8 @@
 #include "pid.h"
 
-#define KP  0.2
+#define KP  0.02   //0.2
 #define KI  0.015
-#define KD  0.2
+#define KD  0.20	  //0.2
 
 void PID_ParameterInit(PID* pid,float set_speed)
 {
@@ -20,7 +20,7 @@ void PID_ParameterInit(PID* pid,float set_speed)
 }
 
 //ÔöÁ¿Ê½PID
-float PID_SpeedAjust(PID* pid,u32 real_speed)
+float PID_SpeedAjust(PID* pid,float real_speed)
 {
     float inc = 0;
 

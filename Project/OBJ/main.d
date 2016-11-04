@@ -3,7 +3,7 @@
 .\OBJ\main.o: ..\User\inc\SysTick.h
 .\OBJ\main.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
 .\OBJ\main.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
-.\OBJ\main.o: D:\Keil\ARM\RV31\INC\stdint.h
+.\OBJ\main.o: D:\Keil4\ARM\RV31\Inc\stdint.h
 .\OBJ\main.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
 .\OBJ\main.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_conf.h
 .\OBJ\main.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -33,6 +33,7 @@
 .\OBJ\main.o: ..\User\inc\car.h
 .\OBJ\main.o: ..\User\inc\pid.h
 .\OBJ\main.o: ..\User\inc\usart.h
-.\OBJ\main.o: D:\Keil\ARM\RV31\INC\stdio.h
-.\OBJ\main.o: D:\Keil\ARM\RV31\INC\stdbool.h
+.\OBJ\main.o: D:\Keil4\ARM\RV31\Inc\stdio.h
+.\OBJ\main.o: D:\Keil4\ARM\RV31\Inc\stdbool.h
 .\OBJ\main.o: ..\User\inc\carcontrol.h
+.\OBJ\main.o: ..\User\inc\time.h

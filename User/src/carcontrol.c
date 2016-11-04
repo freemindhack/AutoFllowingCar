@@ -1,11 +1,18 @@
 #include "carcontrol.h"
 #include "car.h"
 #include "systick.h"
+#include "time.h"
+
+extern Car car;
+
+uint8_t speed_inc;
+uint8_t speed_dec;
 
 //GO --> Left--> Go -- Left --> Go --> Left --> Go -->Stop
+
+/*
 void Run_AlongRect(void)
 {
-    Parameter_Init(40,40,0,0);
     Car_Go();
 	delay1s(5);
 
@@ -31,25 +38,27 @@ void Run_AlongRect(void)
 	delay1s(5);
 
 	Car_Stop();	
-}
-
+} */
 
 void Run_GivenDistance(float distance)
 {
-    float now_distance = 0;
-
-    while(1)
+    if(Car_GetRunDistance()>(distance/4) && speed_inc==0 )
 	{
-	   now_distance = Car_GetRunDistance();
-
-	   if(now_distance - distance > -E && now_distance - distance < E )
-	   {
-	      break;
-	   }
-
-	   delay1s(1);
+	   Car_SpeedInc(&car,0.3);
+	   speed_inc = 1;
 	}
 
-	Car_Stop();
-}
+	if(Car_GetRunDistance()>(distance/2) && speed_dec==0 )
+	{
+	   Car_SpeedDec(&car,0.4);
+	   speed_dec = 1;
+	}
+
+
+	if(Car_GetRunDistance()>distance)
+	{
+	   Car_Stop();
+	}
+	
+}  
 
