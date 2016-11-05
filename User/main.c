@@ -3,14 +3,15 @@
 int main()
 {
 	BSP_Init();//≥ı ºªØ
-	
+
+	Run_Init();
+
 	while(1)
 	{
 	   Car_RunCtl();
-	   Run_GivenDistance(10);
+	   //Run_GivenDistance(5);
+	   Run_FllowTarget(5);
 	}
-		
-	return 0;
 
 }
 

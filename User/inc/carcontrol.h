@@ -6,5 +6,7 @@
 void Run_AlongRect(void);
 
 void Run_GivenDistance(float distance);
+void Run_Init(void);
+void Run_FllowTarget(float distance);
 
 #endif

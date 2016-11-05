@@ -4,11 +4,13 @@
 #include "systick.h"
 #include "time.h"
 
-
 Car car;
 
 SysTime tick_time;
 SysTime pid_time;
+
+void Parameter_Init(TIM_ZKB front_left_speed,TIM_ZKB front_right_speed);
+
 
 
 static void Car_GPIO_Init(void)
@@ -94,7 +96,7 @@ static void Init_PWM(void)
 }
 
 
-void Wheel_Hall_IO_Check(Wheel* w)
+static void Wheel_Hall_IO_Check(Wheel* w)
 {
     w->cur_io_state = GPIO_ReadInputDataBit(HALL_PORT,HALL_LEFT);
 
@@ -103,25 +105,39 @@ void Wheel_Hall_IO_Check(Wheel* w)
 		w->count ++;
 		w->pre_io_state = w->cur_io_state;
 	}
-
 }
 
 
-float Wheel_Hall_CaculateSpeed(Wheel* w,uint8_t k)  
+static float Wheel_Hall_CaculateSpeed(Wheel* w,float k)  
 {
-	float speed = 2*PI*(w->radio)*((float)(w->count) * k/(w->encoder_holes));
+	float speed = 2*PI*(w->radio)*((float)(w->count) * k/( (w->encoder_holes*2-1) ));
 
+	w->circles += ((float)(w->count)/(w->encoder_holes*2-1));
+//	printf("w->count : %d  w->circles ： %f\r\n",w->count,w->circles);
 	w->count = 0;
 
 	return speed;
 }
 
+float Wheel_PwmToSpeed(uint16_t pwm)
+{
+    if(pwm < MIN_DUTY)	 return 0;
+
+	return ((pwm - MIN_DUTY)/360*0.05 + MIN_SPEED); 
+}
+
+uint16_t Wheel_SpeedToPwm(float speed)
+{
+    if( speed < MIN_SPEED ) return MIN_DUTY;
+
+	return ((speed - MIN_SPEED)*20*360 + MIN_DUTY);
+}
 
 void Wheel_SpeedInc(Wheel* w,float speed)
 {
-    if( w->speed + speed > 1.6 )
+    if( w->speed + speed > MAX_SPEED )
 	{
-	    w->speed = 1.6;
+	    w->speed = MAX_SPEED;
 	}
 	else
 	{
@@ -129,14 +145,17 @@ void Wheel_SpeedInc(Wheel* w,float speed)
 	}
 
 	w->pid.set_speed = w->speed;
+
+	Wheel_SetDirectionAndSpeed(w,w->direction,Wheel_SpeedToPwm(w->speed));
+
 }
 
 
 void Wheel_SpeedDec(Wheel* w,float speed)
 {
-	if( w->speed - speed < 0.2 )
+	if( w->speed - speed < MIN_SPEED )
 	{
-	   	w->speed = 0.2;
+	   	w->speed = MIN_SPEED;
 	}
 	else
 	{
@@ -145,18 +164,19 @@ void Wheel_SpeedDec(Wheel* w,float speed)
 
 	w->pid.set_speed = w->speed;
 
+	Wheel_SetDirectionAndSpeed(w,w->direction,Wheel_SpeedToPwm(w->speed));
+
 }
 
 
 void Car_SpeedInc(Car* car,float speed)
 {
    	Wheel_SpeedInc(&car->wheel[0],speed);
+
     PID_ParameterInit(&car->wheel[0].pid,car->wheel[0].speed);
 
 	Wheel_SpeedInc(&car->wheel[1],speed);
 	PID_ParameterInit(&car->wheel[1].pid,car->wheel[1].speed);
-
-	delay1ms(500);
 
 }
 
@@ -167,66 +187,49 @@ void Car_SpeedDec(Car* car,float speed)
 
 	Wheel_SpeedDec(&car->wheel[1],speed);
 	PID_ParameterInit(&car->wheel[1].pid,car->wheel[1].speed);
-
-	delay1ms(500);
 }
-
-
-
 
 void Wheel_SetDirectionAndSpeed(Wheel* w,Wheel_Direction direction,uint16_t speed)
 {
-    w->speed = speed;
+    w->speed = Wheel_PwmToSpeed(speed);
 
     if(w->id == FRONT_LEFT)	 //左前
 	{
 	   if(direction == FORWARD)	  //向前
 	   {
-	       	TIM_SetCompare1(TIM4,w->speed);
+	       	TIM_SetCompare1(TIM4,speed);
 			TIM_SetCompare2(TIM4,0);
 	   }
 	   else
 	   {
 	        TIM_SetCompare1(TIM4,0);
-			TIM_SetCompare2(TIM4,w->speed);
+			TIM_SetCompare2(TIM4,speed);
 	   }
 	}
 	else if(w->id == FRONT_RIGHT) //右前
 	{
 	   if(direction == FORWARD)	  //向前
 	   {
-	       	TIM_SetCompare3(TIM4,w->speed);
+	       	TIM_SetCompare3(TIM4,speed);
 			TIM_SetCompare4(TIM4,0);
 	   }
 	   else
 	   {
 	        TIM_SetCompare3(TIM4,0);
-			TIM_SetCompare4(TIM4,w->speed);
+			TIM_SetCompare4(TIM4,speed);
 	   }
 	}
 }
 
-float Wheel_PwmToSpeed(TIM_ZKB pwm)
-{
-    if(pwm < Dutyfactor_30)	 return 0;
 
-	return ((pwm - Dutyfactor_30)/360*0.1 + 0.2); 
-}
-
-uint16_t Wheel_SpeedToPwm(float speed)
-{
-    if( speed < 0.2 ) return Dutyfactor_30;
-
-	return (speed - 0.2)*10*360 + Dutyfactor_30;
-}
 
 
 void Car_Go(void)	//向前
 {
-     printf("speed: %0.2f  Wheel_SpeedToPwm : %d\r\n",wheel_front_left.speed,Wheel_SpeedToPwm(wheel_front_left.speed));
 
 	 Wheel_SetDirectionAndSpeed(&wheel_front_left,FORWARD,Wheel_SpeedToPwm(wheel_front_left.speed));
 	 Wheel_SetDirectionAndSpeed(&wheel_front_right,FORWARD,Wheel_SpeedToPwm(wheel_front_right.speed));
+
 }  
 
 
@@ -259,7 +262,12 @@ void Car_Stop(void)  //停止
 	GPIO_ResetBits(wheel_front_right.port,wheel_front_right.pin[1]);	
 }
 
-void Wheel_ParameterInit(Wheel* w,WHEEL_ID id,GPIO_TypeDef* port,uint16_t pin1,uint16_t pin2,Wheel_Direction direction,TIM_ZKB speed)
+void Wheel_PidEnable(Wheel* w,uint8_t enable)
+{
+     w->pid_enable = enable;
+}
+
+static void Wheel_ParameterInit(Wheel* w,WHEEL_ID id,GPIO_TypeDef* port,uint16_t pin1,uint16_t pin2,Wheel_Direction direction,TIM_ZKB speed)
 {
      w->id = id;
 	 w->port = port;
@@ -275,14 +283,17 @@ void Wheel_ParameterInit(Wheel* w,WHEEL_ID id,GPIO_TypeDef* port,uint16_t pin1,u
 	 w->encoder_holes = WHEEL_ENCODER_HOLES; 
 	 w->radio = WHEEL_RADIO;
 	 w->distance = 0;
-	 w->phy_speed = 0;
+
+	 w->circles = 0;
 	 
 	 w->pid_time = PID_TIME;
+
+	 w->pid_enable = 1;
 
 }  
 
 
-void Parameter_Init(TIM_ZKB front_left_speed,TIM_ZKB front_right_speed)
+static void Parameter_Init(TIM_ZKB front_left_speed,TIM_ZKB front_right_speed)
 {
    	Wheel_ParameterInit(&wheel_front_left,FRONT_LEFT,GPIOA,WHEEL_FRONT_LEFT_1,WHEEL_FRONT_LEFT_2,FORWARD,front_left_speed);
 	Wheel_ParameterInit(&wheel_front_right,FRONT_RIGHT,GPIOA,WHEEL_FRONT_RIGHT_1,WHEEL_FRONT_RIGHT_2,FORWARD,front_right_speed);
@@ -292,6 +303,8 @@ void Parameter_Init(TIM_ZKB front_left_speed,TIM_ZKB front_right_speed)
 	PID_ParameterInit(&wheel_front_right.pid,wheel_front_right.speed);	
 
 }  
+
+
 
 float Car_GetRunDistance(void)
 {
@@ -303,7 +316,7 @@ void Car_Init(void)
     Car_GPIO_Init();
 
 	Init_PWM();
-	Parameter_Init(Dutyfactor_45,Dutyfactor_45);
+	Parameter_Init(Dutyfactor_40,Dutyfactor_40);
 
 	Car_Go();
 
@@ -326,8 +339,13 @@ void Car_RunCtl(void)
 	       if( wheel_front_left.count > 0)
 		   {
 		   		wheel_front_left.real_speed = Wheel_Hall_CaculateSpeed(&wheel_front_left,5);
-				next_left_speed = PID_SpeedAjust(&wheel_front_left.pid,wheel_front_left.real_speed);
-				Wheel_SetDirectionAndSpeed(&wheel_front_left,wheel_front_left.direction,Wheel_SpeedToPwm(next_left_speed));
+
+				if(wheel_front_left.pid_enable)
+				{
+					next_left_speed = PID_SpeedAjust(&wheel_front_left.pid,wheel_front_left.real_speed);
+					//Wheel_SetDirectionAndSpeed(&wheel_front_left,wheel_front_left.direction,Wheel_SpeedToPwm(next_left_speed));
+				}
+
 
 				wheel_front_left.distance += wheel_front_left.real_speed*0.2;
 
@@ -337,13 +355,16 @@ void Car_RunCtl(void)
 		   if( wheel_front_right.count >0 )
 		   {
 		   		wheel_front_right.real_speed = Wheel_Hall_CaculateSpeed(&wheel_front_right,5);
-				next_right_speed = PID_SpeedAjust(&wheel_front_right.pid,wheel_front_right.real_speed);
-				Wheel_SetDirectionAndSpeed(&wheel_front_right,wheel_front_right.direction,Wheel_SpeedToPwm(next_right_speed));
 
+				if( wheel_front_right.pid_enable )
+				{
+					next_right_speed = PID_SpeedAjust(&wheel_front_right.pid,wheel_front_right.real_speed);
+					//Wheel_SetDirectionAndSpeed(&wheel_front_right,wheel_front_right.direction,Wheel_SpeedToPwm(next_right_speed));
+				}
 		   }
 	
 		   printf("left_speed : %0.2f  right_speed : %0.2f\r\n",wheel_front_left.real_speed,wheel_front_right.real_speed);
-		   printf("next_left_speed : %0.2f  next_right_speed : %0.2f\r\n",next_left_speed,next_right_speed);
+//		   printf("next_left_speed : %0.2f  next_right_speed : %0.2f\r\n",next_left_speed,next_right_speed);
 	   }
 
 	}  

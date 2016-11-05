@@ -33,3 +33,6 @@
 .\OBJ\carcontrol.o: ..\User\inc\pid.h
 .\OBJ\carcontrol.o: ..\User\inc\systick.h
 .\OBJ\carcontrol.o: ..\User\inc\time.h
+.\OBJ\carcontrol.o: ..\User\inc\usart.h
+.\OBJ\carcontrol.o: D:\Keil4\ARM\RV31\Inc\stdio.h
+.\OBJ\carcontrol.o: D:\Keil4\ARM\RV31\Inc\stdbool.h

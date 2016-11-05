@@ -21,7 +21,7 @@
 #define WHEEL_RADIO  0.033   //m
 #define WHEEL_ENCODER_HOLES 20
 
-#define PI 3.14
+#define PI 3.1415
 
 #define PID_TIME 200 //ms
 
@@ -49,6 +49,10 @@ typedef enum
 	Dutyfactor_0   = 0,
 }TIM_ZKB;
 
+#define MIN_DUTY Dutyfactor_30
+#define MIN_SPEED  0.1
+#define MAX_SPEED  0.8
+
 
 typedef enum
 {
@@ -65,7 +69,6 @@ typedef enum
 
 typedef struct 
 {
-
     WHEEL_ID id;
 
     GPIO_TypeDef* port; //控制端口
@@ -78,7 +81,8 @@ typedef struct
 	uint8_t  encoder_holes;//码盘孔数目
 	float  radio;    //车轮半径
 	float    distance; //当前行走路程
-	uint32_t    phy_speed; //轮子当前实际速度
+
+	float circles;
 	
     uint8_t pre_io_state;
 	uint8_t cur_io_state;
@@ -86,8 +90,8 @@ typedef struct
 	uint32_t count;
 
 	PID pid;
-
 	uint16_t pid_time;
+	uint8_t pid_enable;
 
 }Wheel;
 
@@ -95,29 +99,29 @@ typedef struct
 typedef struct 
 {
     Wheel wheel[4];	 //4个轮子
-
-	#define wheel_front_left car.wheel[0]
-	#define wheel_front_right car.wheel[1]
-	#define wheel_rear_left car.wheel[2]
-	#define wheel_rear_right car.wheel[3]
-
-
 }Car;
 
 
-void Car_Init(void);
-void Car_Move(void);
 
+#define wheel_front_left car.wheel[0]
+#define wheel_front_right car.wheel[1]
+#define wheel_rear_left car.wheel[2]
+#define wheel_rear_right car.wheel[3]
+
+
+void Car_Init(void);
 void Car_Go(void);	
 void Car_Back(void);
 void Car_Left(void);
 void Car_Right(void);
 void Car_Stop(void);
 
-void Parameter_Init(TIM_ZKB front_left_speed,TIM_ZKB front_right_speed);
+
+static void Car_GPIO_Init(void);
 float Car_GetRunDistance(void);
 void Car_RunCtl(void);
 void Car_SpeedInc(Car* car,float speed);
 void Car_SpeedDec(Car* car,float speed);
+void Wheel_SetDirectionAndSpeed(Wheel* w,Wheel_Direction direction,uint16_t speed);
 
 #endif
